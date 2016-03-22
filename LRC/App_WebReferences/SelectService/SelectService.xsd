@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfVenLite">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VenLite" nillable="true" type="tns:VenLite" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVenLite" nillable="true" type="tns:ArrayOfVenLite" />
+  <xs:complexType name="VenLite">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="VenueName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VenLite" nillable="true" type="tns:VenLite" />
+  <xs:complexType name="ArrayOfShowLite">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ShowLite" nillable="true" type="tns:ShowLite" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfShowLite" nillable="true" type="tns:ArrayOfShowLite" />
+  <xs:complexType name="ShowLite">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ShowDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShowName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Showtime" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ShowLite" nillable="true" type="tns:ShowLite" />
+  <xs:complexType name="ArrayOfVenDetailLite">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VenDetailLite" nillable="true" type="tns:VenDetailLite" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVenDetailLite" nillable="true" type="tns:ArrayOfVenDetailLite" />
+  <xs:complexType name="VenDetailLite">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ArtistName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShowName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VenueName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VenDetailLite" nillable="true" type="tns:VenDetailLite" />
+  <xs:complexType name="ArrayOfShowDetailLite">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ShowDetailLite" nillable="true" type="tns:ShowDetailLite" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfShowDetailLite" nillable="true" type="tns:ArrayOfShowDetailLite" />
+  <xs:complexType name="ShowDetailLite">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ArtistName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShowName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VenueName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ShowDetailLite" nillable="true" type="tns:ShowDetailLite" />
+</xs:schema>

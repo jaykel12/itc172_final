@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SelectService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:59034/SelectService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:59034/SelectService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:59034/SelectService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:59034/SelectService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISelectService_GetArtistName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetArtistName" />
+  </wsdl:message>
+  <wsdl:message name="ISelectService_GetArtistName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetArtistNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISelectService_GetShowName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShowName" />
+  </wsdl:message>
+  <wsdl:message name="ISelectService_GetShowName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShowNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISelectService_GetShowDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShowDate" />
+  </wsdl:message>
+  <wsdl:message name="ISelectService_GetShowDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShowDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISelectService_GetShowTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShowTime" />
+  </wsdl:message>
+  <wsdl:message name="ISelectService_GetShowTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShowTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISelectService_GetVenueName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVenueName" />
+  </wsdl:message>
+  <wsdl:message name="ISelectService_GetVenueName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVenueNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISelectService_GetArtName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetArtName" />
+  </wsdl:message>
+  <wsdl:message name="ISelectService_GetArtName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetArtNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISelectService_GetVenueDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVenueDetail" />
+  </wsdl:message>
+  <wsdl:message name="ISelectService_GetVenueDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVenueDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISelectService_GetShowDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShowDetail" />
+  </wsdl:message>
+  <wsdl:message name="ISelectService_GetShowDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShowDetailResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISelectService">
+    <wsdl:operation name="GetArtistName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISelectService/GetArtistName" message="tns:ISelectService_GetArtistName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISelectService/GetArtistNameResponse" message="tns:ISelectService_GetArtistName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShowName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISelectService/GetShowName" message="tns:ISelectService_GetShowName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISelectService/GetShowNameResponse" message="tns:ISelectService_GetShowName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShowDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISelectService/GetShowDate" message="tns:ISelectService_GetShowDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISelectService/GetShowDateResponse" message="tns:ISelectService_GetShowDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShowTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISelectService/GetShowTime" message="tns:ISelectService_GetShowTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISelectService/GetShowTimeResponse" message="tns:ISelectService_GetShowTime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVenueName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISelectService/GetVenueName" message="tns:ISelectService_GetVenueName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISelectService/GetVenueNameResponse" message="tns:ISelectService_GetVenueName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetArtName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISelectService/GetArtName" message="tns:ISelectService_GetArtName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISelectService/GetArtNameResponse" message="tns:ISelectService_GetArtName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVenueDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISelectService/GetVenueDetail" message="tns:ISelectService_GetVenueDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISelectService/GetVenueDetailResponse" message="tns:ISelectService_GetVenueDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShowDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISelectService/GetShowDetail" message="tns:ISelectService_GetShowDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISelectService/GetShowDetailResponse" message="tns:ISelectService_GetShowDetail_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISelectService" type="tns:ISelectService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetArtistName">
+      <soap:operation soapAction="http://tempuri.org/ISelectService/GetArtistName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShowName">
+      <soap:operation soapAction="http://tempuri.org/ISelectService/GetShowName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShowDate">
+      <soap:operation soapAction="http://tempuri.org/ISelectService/GetShowDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShowTime">
+      <soap:operation soapAction="http://tempuri.org/ISelectService/GetShowTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVenueName">
+      <soap:operation soapAction="http://tempuri.org/ISelectService/GetVenueName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArtName">
+      <soap:operation soapAction="http://tempuri.org/ISelectService/GetArtName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVenueDetail">
+      <soap:operation soapAction="http://tempuri.org/ISelectService/GetVenueDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShowDetail">
+      <soap:operation soapAction="http://tempuri.org/ISelectService/GetShowDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SelectService">
+    <wsdl:port name="BasicHttpBinding_ISelectService" binding="tns:BasicHttpBinding_ISelectService">
+      <soap:address location="http://localhost:59034/SelectService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
